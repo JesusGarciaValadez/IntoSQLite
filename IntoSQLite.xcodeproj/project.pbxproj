@@ -14,6 +14,12 @@
 		6D95B83A1D7F63FE00C496E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D95B8381D7F63FE00C496E5 /* LaunchScreen.storyboard */; };
 		6D95B8451D7F63FF00C496E5 /* IntoSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8441D7F63FF00C496E5 /* IntoSQLiteTests.swift */; };
 		6D95B8501D7F63FF00C496E5 /* IntoSQLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B84F1D7F63FF00C496E5 /* IntoSQLiteUITests.swift */; };
+		6D95B85F1D7F647500C496E5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95B85E1D7F647500C496E5 /* libsqlite3.0.tbd */; };
+		6D95B86C1D7F659300C496E5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8621D7F659300C496E5 /* FMDatabase.m */; };
+		6D95B86D1D7F659300C496E5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8641D7F659300C496E5 /* FMDatabaseAdditions.m */; };
+		6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8661D7F659300C496E5 /* FMDatabasePool.m */; };
+		6D95B86F1D7F659300C496E5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8681D7F659300C496E5 /* FMDatabaseQueue.m */; };
+		6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B86B1D7F659300C496E5 /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,19 @@
 		6D95B84B1D7F63FF00C496E5 /* IntoSQLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntoSQLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D95B84F1D7F63FF00C496E5 /* IntoSQLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntoSQLiteUITests.swift; sourceTree = "<group>"; };
 		6D95B8511D7F63FF00C496E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D95B85E1D7F647500C496E5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntoSQLite-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D95B8611D7F659300C496E5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		6D95B8621D7F659300C496E5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		6D95B8631D7F659300C496E5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6D95B8641D7F659300C496E5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6D95B8651D7F659300C496E5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		6D95B8661D7F659300C496E5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6D95B8671D7F659300C496E5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		6D95B8681D7F659300C496E5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		6D95B8691D7F659300C496E5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		6D95B86A1D7F659300C496E5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		6D95B86B1D7F659300C496E5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D95B85F1D7F647500C496E5 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,7 @@
 				6D95B8431D7F63FF00C496E5 /* IntoSQLiteTests */,
 				6D95B84E1D7F63FF00C496E5 /* IntoSQLiteUITests */,
 				6D95B82D1D7F63FD00C496E5 /* Products */,
+				6D95B85D1D7F647400C496E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +118,7 @@
 		6D95B82E1D7F63FD00C496E5 /* IntoSQLite */ = {
 			isa = PBXGroup;
 			children = (
+				6D95B8711D7F659B00C496E5 /* FMDB */,
 				6D95B82F1D7F63FE00C496E5 /* AppDelegate.swift */,
 				6D95B8311D7F63FE00C496E5 /* ViewController.swift */,
 				6D95B8331D7F63FE00C496E5 /* Main.storyboard */,
@@ -123,6 +145,33 @@
 				6D95B8511D7F63FF00C496E5 /* Info.plist */,
 			);
 			path = IntoSQLiteUITests;
+			sourceTree = "<group>";
+		};
+		6D95B85D1D7F647400C496E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D95B85E1D7F647500C496E5 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D95B8711D7F659B00C496E5 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */,
+				6D95B8611D7F659300C496E5 /* FMDatabase.h */,
+				6D95B8621D7F659300C496E5 /* FMDatabase.m */,
+				6D95B8631D7F659300C496E5 /* FMDatabaseAdditions.h */,
+				6D95B8641D7F659300C496E5 /* FMDatabaseAdditions.m */,
+				6D95B8651D7F659300C496E5 /* FMDatabasePool.h */,
+				6D95B8661D7F659300C496E5 /* FMDatabasePool.m */,
+				6D95B8671D7F659300C496E5 /* FMDatabaseQueue.h */,
+				6D95B8681D7F659300C496E5 /* FMDatabaseQueue.m */,
+				6D95B8691D7F659300C496E5 /* FMDB.h */,
+				6D95B86A1D7F659300C496E5 /* FMResultSet.h */,
+				6D95B86B1D7F659300C496E5 /* FMResultSet.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +243,7 @@
 					6D95B82B1D7F63FD00C496E5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 22EK2B4UZJ;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					6D95B83F1D7F63FF00C496E5 = {
@@ -262,8 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D95B86C1D7F659300C496E5 /* FMDatabase.m in Sources */,
 				6D95B8321D7F63FE00C496E5 /* ViewController.swift in Sources */,
+				6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */,
+				6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */,
 				6D95B8301D7F63FE00C496E5 /* AppDelegate.swift in Sources */,
+				6D95B86D1D7F659300C496E5 /* FMDatabaseAdditions.m in Sources */,
+				6D95B86F1D7F659300C496E5 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 22EK2B4UZJ;
 				INFOPLIST_FILE = IntoSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hydrastudio.IntoSQLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntoSQLite/IntoSQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 22EK2B4UZJ;
 				INFOPLIST_FILE = IntoSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hydrastudio.IntoSQLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntoSQLite/IntoSQLite-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
