@@ -119,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				6D95B8711D7F659B00C496E5 /* FMDB */,
+				6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */,
 				6D95B82F1D7F63FE00C496E5 /* AppDelegate.swift */,
 				6D95B8311D7F63FE00C496E5 /* ViewController.swift */,
 				6D95B8331D7F63FE00C496E5 /* Main.storyboard */,
@@ -158,7 +159,6 @@
 		6D95B8711D7F659B00C496E5 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */,
 				6D95B8611D7F659300C496E5 /* FMDatabase.h */,
 				6D95B8621D7F659300C496E5 /* FMDatabase.m */,
 				6D95B8631D7F659300C496E5 /* FMDatabaseAdditions.h */,
