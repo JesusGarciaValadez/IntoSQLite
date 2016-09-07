@@ -24,7 +24,6 @@ class FileHelper {
   // Returns the complete path of a filename from inside the documents folder
   func getPathFromFileInDocumentsFolder( fileName : String ) -> String {
 
-    // return ( getDocumentsFolderPath() as String ).appendingPathComponent( fileName )
     let documentsFolderPath : String = getDocumentsFolderPath()
     let documentsPath : URL = URL( fileURLWithPath: documentsFolderPath )
     let path = documentsPath.appendingPathComponent( fileName )
@@ -40,12 +39,12 @@ class FileHelper {
 
     if let filePath = path {
       if fileManager.fileExists( atPath: filePath ) {
-        print( "El archivo \(fileName) existe en el path de documentos." );
+        print( "The file \(fileName) exists in the documents folder." );
         exists = true
       }
       else
       {
-        print( "El archivo \(fileName) No existe en el path de documentos." );
+        print( "The file \(fileName) not exists in the documents folder." );
         exists = false
       }
     } else{
@@ -78,7 +77,7 @@ class FileHelper {
       }
       else
       {
-        print( "The database doen't exists in the bundle." )
+        print( "The database doesn't exist in the bundle." )
         exists = false
       }
     } else {
