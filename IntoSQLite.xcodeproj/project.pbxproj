@@ -66,6 +66,7 @@
 		6D95B8691D7F659300C496E5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		6D95B86A1D7F659300C496E5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		6D95B86B1D7F659300C496E5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */,
 				6D95B82F1D7F63FE00C496E5 /* AppDelegate.swift */,
 				6D95B8311D7F63FE00C496E5 /* ViewController.swift */,
+				EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */,
 				6D95B8331D7F63FE00C496E5 /* Main.storyboard */,
 				6D95B8361D7F63FE00C496E5 /* Assets.xcassets */,
 				6D95B8381D7F63FE00C496E5 /* LaunchScreen.storyboard */,
@@ -574,6 +576,7 @@
 				6D95B8561D7F63FF00C496E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D95B8571D7F63FF00C496E5 /* Build configuration list for PBXNativeTarget "IntoSQLiteTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +585,7 @@
 				6D95B8591D7F63FF00C496E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D95B85A1D7F63FF00C496E5 /* Build configuration list for PBXNativeTarget "IntoSQLiteUITests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +594,7 @@
 				6D95B85C1D7F63FF00C496E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
