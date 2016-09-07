@@ -16,17 +16,17 @@ class ViewController: UIViewController {
 
   @IBAction func saveCarButton(_ sender: AnyObject) {
 
-    if self.saveCarModel.hasText && self.saveCarPrice.hasText {
-      if let carModel = self.saveCarModel.text , let carPrice = Int ( self.saveCarPrice.text! ) {
-        self.saveCar( model : carModel, price : carPrice )
-      }
+    if let carModel = saveCarModel.text, let carPrice = saveCarPrice.text {
+
+      let carPriceInt : Int = Int( carPrice )!
+      saveCar( model : carModel, price : carPriceInt )
     }
   }
 
   @IBAction func searchCarButton(_ sender: AnyObject) {
 
-    if self.searchCarModel.hasText, let carModel = self.searchCarModel.text {
-      self.searchCar( model: carModel )
+    if searchCarModel.hasText, let carModel = searchCarModel.text {
+      searchCar( model: carModel )
     }
   }
 
