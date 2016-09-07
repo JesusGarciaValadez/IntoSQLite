@@ -20,6 +20,7 @@
 		6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8661D7F659300C496E5 /* FMDatabasePool.m */; };
 		6D95B86F1D7F659300C496E5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8681D7F659300C496E5 /* FMDatabaseQueue.m */; };
 		6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B86B1D7F659300C496E5 /* FMResultSet.m */; };
+		EA19B3AD1D7FD8DC00C0C85B /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		6D95B86A1D7F659300C496E5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		6D95B86B1D7F659300C496E5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.sqlite; sourceTree = "<group>"; };
+		EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				6D95B8601D7F659300C496E5 /* IntoSQLite-Bridging-Header.h */,
 				6D95B82F1D7F63FE00C496E5 /* AppDelegate.swift */,
 				6D95B8311D7F63FE00C496E5 /* ViewController.swift */,
+				EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */,
 				EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */,
 				6D95B8331D7F63FE00C496E5 /* Main.storyboard */,
 				6D95B8361D7F63FE00C496E5 /* Assets.xcassets */,
@@ -317,6 +320,7 @@
 				6D95B86C1D7F659300C496E5 /* FMDatabase.m in Sources */,
 				6D95B8321D7F63FE00C496E5 /* ViewController.swift in Sources */,
 				6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */,
+				EA19B3AD1D7FD8DC00C0C85B /* FileHelper.swift in Sources */,
 				6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */,
 				6D95B8301D7F63FE00C496E5 /* AppDelegate.swift in Sources */,
 				6D95B86D1D7F659300C496E5 /* FMDatabaseAdditions.m in Sources */,
