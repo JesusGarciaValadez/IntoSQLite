@@ -20,6 +20,8 @@
 		6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8661D7F659300C496E5 /* FMDatabasePool.m */; };
 		6D95B86F1D7F659300C496E5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B8681D7F659300C496E5 /* FMDatabaseQueue.m */; };
 		6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95B86B1D7F659300C496E5 /* FMResultSet.m */; };
+		6DC627321D82159A000B7F10 /* FileManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC627311D82159A000B7F10 /* FileManagerError.swift */; };
+		6DD5CAE61D820C210082BA98 /* cars.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */; };
 		EA19B3AD1D7FD8DC00C0C85B /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,7 @@
 		6D95B8691D7F659300C496E5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		6D95B86A1D7F659300C496E5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		6D95B86B1D7F659300C496E5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		6DC627311D82159A000B7F10 /* FileManagerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerError.swift; sourceTree = "<group>"; };
 		EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.sqlite; sourceTree = "<group>"; };
 		EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +129,7 @@
 				6D95B82F1D7F63FE00C496E5 /* AppDelegate.swift */,
 				6D95B8311D7F63FE00C496E5 /* ViewController.swift */,
 				EA19B3AC1D7FD8DC00C0C85B /* FileHelper.swift */,
+				6DC627311D82159A000B7F10 /* FileManagerError.swift */,
 				EA19B3AB1D7FD6C000C0C85B /* cars.sqlite */,
 				6D95B8331D7F63FE00C496E5 /* Main.storyboard */,
 				6D95B8361D7F63FE00C496E5 /* Assets.xcassets */,
@@ -290,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD5CAE61D820C210082BA98 /* cars.sqlite in Resources */,
 				6D95B83A1D7F63FE00C496E5 /* LaunchScreen.storyboard in Resources */,
 				6D95B8371D7F63FE00C496E5 /* Assets.xcassets in Resources */,
 				6D95B8351D7F63FE00C496E5 /* Main.storyboard in Resources */,
@@ -319,6 +324,7 @@
 			files = (
 				6D95B86C1D7F659300C496E5 /* FMDatabase.m in Sources */,
 				6D95B8321D7F63FE00C496E5 /* ViewController.swift in Sources */,
+				6DC627321D82159A000B7F10 /* FileManagerError.swift in Sources */,
 				6D95B8701D7F659300C496E5 /* FMResultSet.m in Sources */,
 				EA19B3AD1D7FD8DC00C0C85B /* FileHelper.swift in Sources */,
 				6D95B86E1D7F659300C496E5 /* FMDatabasePool.m in Sources */,

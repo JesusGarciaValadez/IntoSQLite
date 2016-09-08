@@ -13,11 +13,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
+  func copyDatabaseToDocumentsFolder(database: String) {
+    let fileManager = FileManager.default
+    let fileHelper  = FileHelper()
+
+    // Move the database to documents folder if there's not there
+    if !fileHelper.existsFileInDocumentsFolder(fileName: database)!{
+
+      print("The database doesn't exists in documents folder")
+
+      do{
+        let pathDatabaseInBundle = fileHelper.getDatabasePathInBundle(databaseName: database)
+        let pathDatabaseInDocuments = fileHelper.getPathFromFileInDocumentsFolder(fileName: database)
+        
+        try fileManager.copyItem(atPath: pathDatabaseInBundle!, toPath: pathDatabaseInDocuments!)
+      }catch _{
+
+        print("Bundle Path is nil")
+      }
+    }else{
+      print("The database exists in documents folder")
+    }
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
-   //  copyDatabaseToDirectory( 'cars' )
+    copyDatabaseToDocumentsFolder(database:"cars")
     return true
   }
 
