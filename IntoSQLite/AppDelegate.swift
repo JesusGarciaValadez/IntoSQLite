@@ -22,17 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
       print("The database doesn't exists in documents folder")
 
-      do{
-        let pathDatabaseInBundle = fileHelper.getDatabasePathInBundle(databaseName: database)
-        let pathDatabaseInDocuments = fileHelper.getPathFromFileInDocumentsFolder(fileName: database)
-        
-        try fileManager.copyItem(atPath: pathDatabaseInBundle!, toPath: pathDatabaseInDocuments!)
-      }catch _{
+      let pathDatabaseInBundle = fileHelper.getDatabasePathInBundle(databaseName: database)
+      let pathDatabaseInDocuments = fileHelper.getPathFromFileInDocumentsFolder(fileName: database)
 
-        print("Bundle Path is nil")
+      do{
+        try fileManager.copyItem(atPath: pathDatabaseInBundle!, toPath: pathDatabaseInDocuments!) throws -> FileManagerError
+        print("But now there it is! Congratulations!")
+      }catch _{
+        print("Error: ")
       }
     }else{
-      print("The database exists in documents folder")
+      print("The database exists in documents folder! Congratulations!")
     }
   }
 
