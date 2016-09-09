@@ -18,18 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let fileHelper  = FileHelper()
 
     // Move the database to documents folder if there's not there
-    if !fileHelper.existsFileInDocumentsFolder(fileName: database)!{
-
-      print("The database doesn't exists in documents folder")
+    if fileHelper.existsFileInDocumentsFolder(fileName: database)!{
 
       let pathDatabaseInBundle = fileHelper.getDatabasePathInBundle(databaseName: database)
-      let pathDatabaseInDocuments = fileHelper.getPathFromFileInDocumentsFolder(fileName: database)
+      let pathDatabaseInDocuments = fileHelper.getPathFromFileInDocumentsFolder(fileName: "\(database).sqlite")
 
       do{
-        try fileManager.copyItem(atPath: pathDatabaseInBundle!, toPath: pathDatabaseInDocuments!) throws -> FileManagerError
-        print("But now there it is! Congratulations!")
-      }catch _{
-        print("Error: ")
+        try fileManager.copyItem(atPath: pathDatabaseInBundle!, toPath: pathDatabaseInDocuments!)
+      }catch let error as NSError {
+        print("Ooops! Something went wrong: \(error)")
       }
     }else{
       print("The database exists in documents folder! Congratulations!")

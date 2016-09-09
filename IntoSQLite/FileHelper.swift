@@ -25,19 +25,17 @@ class FileHelper {
   func getPathFromFileInDocumentsFolder(fileName: String) -> String? {
 
     let documentsFolderPath: String = getDocumentsFolderPath()!
-    let documentsPath: URL = URL(fileURLWithPath: documentsFolderPath)
-    let path = documentsPath.appendingPathComponent(fileName)
+    let path: String = documentsFolderPath.appending(fileName)
 
-    return String(describing: path)
+    return path
   }
 
   // Checks if a file exists in the documents directory
   func existsFileInDocumentsFolder(fileName: String) -> Bool? {
 
     var exists : Bool? = nil
-    let path : String? = getPathFromFileInDocumentsFolder(fileName: fileName)!
 
-    if let filePath = path {
+    if let filePath = getPathFromFileInDocumentsFolder(fileName: fileName) {
       if fileManager.fileExists(atPath: filePath) {
         exists = true
       }
@@ -50,7 +48,7 @@ class FileHelper {
     }
 
     return exists
-}
+  }
 
   // Get database path in main bundle
   func getDatabasePathInBundle(databaseName: String) -> String? {
